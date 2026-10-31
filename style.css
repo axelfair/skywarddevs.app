@@ -1,0 +1,55 @@
+:root {
+  --sky-top: #5fb4f0;
+  --sky-bottom: #cfe9fb;
+  --navy: #14202e;
+  --muted: #5b6f84;
+  --butter: #f5c542;
+  --butter-deep: #e0a400;
+  --card: rgba(255, 255, 255, 0.92);
+  --line: #e2e8f0;
+  --link: #0074d1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sky-top: #0d2a45;
+    --sky-bottom: #12324f;
+    --navy: #eef3f8;
+    --muted: #a8b8c8;
+    --card: rgba(20, 32, 46, 0.92);
+    --line: #2b3d50;
+    --link: #6cb8ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--navy);
+  background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom)) fixed;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 80px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+header img { width: 56px; height: 56px; border-radius: 13px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18); }
+header a { color: #fff; text-decoration: none; font-weight: 800; font-size: 22px; text-shadow: 0 1px 6px rgba(20, 32, 46, 0.28); }
+.card { background: var(--card); border-radius: 28px; padding: 28px 24px; box-shadow: 0 10px 30px rgba(20, 32, 46, 0.12); }
+.card + .card { margin-top: 16px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+p, li { color: var(--navy); }
+.muted, .updated { color: var(--muted); font-size: 14px; }
+a { color: var(--link); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+.button {
+  display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 999px;
+  background: linear-gradient(180deg, var(--butter), var(--butter-deep));
+  color: #14202e; font-weight: 800; text-decoration: none;
+}
+nav.links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+nav.links a { font-weight: 700; }
+footer { margin-top: 28px; text-align: center; font-size: 13px; color: #fff; text-shadow: 0 1px 4px rgba(20, 32, 46, 0.3); }
+footer a { color: #fff; }

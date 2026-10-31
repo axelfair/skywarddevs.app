@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Butter Meter Privacy Policy</title>
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <header><img src="../icon.png" alt=""><a href="../">Butter Meter</a></header>
+  <section class="card">
+<h1>Butter Meter Privacy Policy</h1>
+<p class="updated">Last updated: October 28, 2026</p>
+
+<p>Butter Meter estimates how smooth an aircraft landing felt, using your iPhone's own sensors.
+It has no accounts and no sign-in. Your logbook lives on your phone. This page explains exactly what
+the app uses, the one small thing it shares, and how you control it.</p>
+
+<h2>What stays on your phone</h2>
+<table>
+  <tr><th>Data</th><th>What it's for</th></tr>
+  <tr><td>Motion and barometer readings</td><td>Measuring the touchdown, braking and rollout. Recorded only while you're recording a landing, with the app open.</td></tr>
+  <tr><td>Location (GPS)</td><td>Ground speed through the rollout, knowing when you've slowed to taxi speed, and looking up the weather where you landed. Used only while recording, and only if you allow location access. Your coordinates are never sent to us.</td></tr>
+  <tr><td>Your logbook</td><td>Every landing, its score, its sensor recording and any flight details you add (flight number, airports, seat, aircraft). Stored on your phone only.</td></tr>
+</table>
+<p>Weather is fetched from Apple's WeatherKit service, which receives the landing location to
+return the conditions. Apple handles that request under
+<a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+<h2>What is shared: the leaderboard</h2>
+<p>If <strong>Share Verified Landings</strong> is on (Settings → Leaderboard), each verified
+landing sends one small row to the Butter Meter leaderboard so it can count towards the airline,
+airport and aircraft averages. That row contains:</p>
+<ul>
+  <li>your callsign (a nickname you choose) and a random ID created for this install of the app;</li>
+  <li>the score, its component scores, and a short summary of the landing (touchdown g-force,
+      braking, descent, ground speed, number of bounces, how confident the measurement was);</li>
+  <li>the date, the airline, the departure and arrival airports, and the aircraft type, if you entered them;</li>
+  <li>your iPhone model and the app version, so scoring differences between phones can be checked.</li>
+</ul>
+<p>It does <strong>not</strong> contain your name, email, Apple ID, location coordinates, contacts
+or the raw sensor recording. The random install ID is not linked to who you are. It only lets the
+leaderboard recognise repeat submissions from the same app.</p>
+<p>Leaderboard rows are stored with Supabase (a hosted database). Your callsign and scores can be
+seen by other Butter Meter users on the leaderboard. Entries that look fake or abusive may be hidden.</p>
+
+<h2>Purchases</h2>
+<p>Butter Meter Unlimited is bought through Apple's App Store. Apple handles the payment; we never
+see your payment details.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No accounts, no advertising, no third-party analytics or tracking SDKs.</li>
+  <li>No tracking across other apps or websites, and no selling of data.</li>
+  <li>No recording in the background: measuring only happens while you're recording a landing with the app open.</li>
+</ul>
+
+<h2>Your controls</h2>
+<ul>
+  <li><strong>Stop sharing:</strong> turn off Share Verified Landings in Settings. Nothing more is sent.</li>
+  <li><strong>Delete landings:</strong> long-press a landing in your Logbook (or open it) and choose Delete, or use Settings → Delete All Landings.</li>
+  <li><strong>Location:</strong> you can deny or revoke location access in iOS Settings. Butter Meter still records using motion and the barometer.</li>
+  <li><strong>Remove leaderboard entries:</strong> Settings → Remove My Leaderboard Entries deletes
+      every landing your phone has shared and turns sharing off. If you've deleted the app, email us
+      (<a href="mailto:support@skywarddevs.app">support@skywarddevs.app</a>) with your callsign and we'll remove its rows.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Butter Meter is not directed at children under 13, and we don't knowingly collect data from
+children under 13.</p>
+
+<h2>Changes</h2>
+<p>If how Butter Meter handles data changes meaningfully, we'll update this page and the date above.</p>
+
+<h2>Contact</h2>
+<p>Questions or removal requests: <a href="mailto:support@skywarddevs.app">support@skywarddevs.app</a></p>
+  </section>
+  <footer><a href="../support/">Support</a> · © 2026 Alexander Fairlie</footer>
+</main>
+</body>
+</html>
